@@ -3,191 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Site vitrine premium pour barber shop : coupe, barbe, soins, réservation WhatsApp et expérience haut de gamme." />
+  <meta name="description" content="Maison Noir Barber, barber shop premium : coupes, barbe, soins, réservation rapide et expérience haut de gamme." />
   <title>Maison Noir Barber — Barber Shop Premium</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=premium-3" />
+  <link rel="stylesheet" href="style.css?v=premium1000" />
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="grain"></div>
 
-  <header class="header">
-    <a href="#accueil" class="brand">
-      <span class="brand-mark">MN</span>
-      <span>Maison Noir</span>
+  <header class="site-header" id="top">
+    <a href="#accueil" class="logo" aria-label="Maison Noir Barber">
+      <span class="logo-icon">MN</span>
+      <span class="logo-text">Maison Noir</span>
     </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="nav" id="nav">
+    <nav class="site-nav" id="siteNav">
       <a href="#services">Services</a>
-      <a href="#experience">Expérience</a>
+      <a href="#expertise">Expertise</a>
       <a href="#galerie">Galerie</a>
       <a href="#avis">Avis</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="https://wa.me/33123456789" class="nav-cta" target="_blank" rel="noopener">Réserver</a>
+    <a class="header-cta" href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver</a>
   </header>
 
   <main>
-    <section class="hero" id="accueil">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Barber shop premium · Paris</p>
-        <h1>L’art du détail pour hommes exigeants.</h1>
-        <p class="lead">Coupe signature, dégradé précis, barbe sculptée et soin visage dans une atmosphère noire, dorée et haut de gamme.</p>
+    <section class="hero section-dark" id="accueil">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Barber shop premium · Paris 11</p>
+          <h1>Une coupe nette. Une barbe précise. Une présence qui marque.</h1>
+          <p class="hero-lead">Maison Noir Barber transforme chaque passage en expérience haut de gamme : diagnostic style, dégradé maîtrisé, barbe sculptée et finitions propres.</p>
 
-        <div class="actions">
-          <a class="btn primary" href="tel:+33123456789">Appeler maintenant</a>
-          <a class="btn ghost" href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="tel:+33123456789">Appeler maintenant</a>
+            <a class="btn btn-glass" href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+          </div>
+
+          <div class="proof-row">
+            <div><strong>4.9/5</strong><span>+320 avis clients</span></div>
+            <div><strong>8 ans</strong><span>d’expertise barber</span></div>
+            <div><strong>30 min</strong><span>créneau rapide</span></div>
+          </div>
         </div>
 
-        <div class="stats">
-          <div><strong>4.9/5</strong><span>+320 avis</span></div>
-          <div><strong>8 ans</strong><span>d’expérience</span></div>
-          <div><strong>30 min</strong><span>service rapide</span></div>
-        </div>
-      </div>
-
-      <div class="hero-showcase reveal">
-        <div class="premium-card appointment-card">
-          <p>Prochain créneau</p>
-          <strong>Aujourd’hui · 18:30</strong>
-          <span>Coupe + barbe signature</span>
-        </div>
-
-        <div class="barber-visual main-visual" aria-label="Illustration barber shop premium">
-          <div class="chair"></div>
-          <div class="mirror"></div>
-          <div class="razor"></div>
-          <div class="light one"></div>
-          <div class="light two"></div>
-        </div>
-
-        <div class="premium-card rating-card">
-          <div class="stars">★★★★★</div>
-          <p>“Dégradé parfait, salon propre, résultat premium.”</p>
+        <div class="hero-media reveal">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=85" alt="Barber professionnel en train de couper les cheveux d’un client" />
+          <div class="floating-card card-top">
+            <span>Prochain créneau</span>
+            <strong>Aujourd’hui · 18:30</strong>
+            <small>Coupe + barbe signature</small>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="stars">★★★★★</span>
+            <strong>“Dégradé parfait.”</strong>
+            <small>Karim B. · Client vérifié</small>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="strip">
+    <section class="trust-strip">
       <span>Dégradé à blanc</span>
-      <span>Barbe sculptée</span>
       <span>Serviette chaude</span>
-      <span>Rasage traditionnel</span>
-      <span>Soin visage</span>
+      <span>Barbe sculptée</span>
+      <span>Produits premium</span>
+      <span>Réservation rapide</span>
     </section>
 
     <section class="section" id="services">
-      <div class="section-head reveal">
-        <p class="eyebrow">Prestations</p>
-        <h2>Des services clairs, rentables et faciles à réserver.</h2>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services & tarifs</p>
+        <h2>Des prestations premium, lisibles et pensées pour convertir.</h2>
+        <p>Le client comprend vite ce qu’il réserve, combien ça coûte, et comment prendre rendez-vous.</p>
       </div>
 
       <div class="services-grid">
-        <article class="service big reveal">
-          <span class="badge">Le plus réservé</span>
+        <article class="service-card featured reveal">
+          <span class="pill">Le plus demandé</span>
           <h3>Coupe + Barbe Signature</h3>
-          <p>Diagnostic rapide, dégradé précis, taille de barbe, contours au rasoir et finition coiffage.</p>
-          <div class="price">45 €</div>
+          <p>Diagnostic style, dégradé précis, taille de barbe, contours au rasoir et finition coiffage.</p>
+          <div class="service-footer"><strong>45 €</strong><a href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver</a></div>
         </article>
-        <article class="service reveal"><h3>Coupe Homme</h3><p>Classique, moderne, taper, burst fade ou dégradé à blanc.</p><div class="price">28 €</div></article>
-        <article class="service reveal"><h3>Taille de Barbe</h3><p>Sculpture propre, serviette chaude et contours nets.</p><div class="price">22 €</div></article>
-        <article class="service reveal"><h3>Rasage Traditionnel</h3><p>Rasoir, soin apaisant et finition premium.</p><div class="price">30 €</div></article>
-        <article class="service reveal"><h3>Soin Visage</h3><p>Nettoyage, hydratation et effet frais immédiat.</p><div class="price">25 €</div></article>
+        <article class="service-card reveal"><h3>Coupe Homme</h3><p>Classique, crop, taper, burst fade ou dégradé à blanc.</p><div class="service-footer"><strong>28 €</strong><a href="#contact">Infos</a></div></article>
+        <article class="service-card reveal"><h3>Taille de Barbe</h3><p>Ligne nette, serviette chaude, finition propre au rasoir.</p><div class="service-footer"><strong>22 €</strong><a href="#contact">Infos</a></div></article>
+        <article class="service-card reveal"><h3>Rasage Traditionnel</h3><p>Rasage à l’ancienne, soin apaisant et serviette chaude.</p><div class="service-footer"><strong>30 €</strong><a href="#contact">Infos</a></div></article>
+        <article class="service-card reveal"><h3>Soin Visage</h3><p>Nettoyage, hydratation, effet frais et finition premium.</p><div class="service-footer"><strong>25 €</strong><a href="#contact">Infos</a></div></article>
+        <article class="service-card reveal"><h3>Coupe Enfant</h3><p>Coupe propre, rapide et adaptée aux plus jeunes.</p><div class="service-footer"><strong>18 €</strong><a href="#contact">Infos</a></div></article>
       </div>
     </section>
 
-    <section class="section experience" id="experience">
-      <div class="experience-visual reveal">
-        <div class="wall-frame frame-large"><span>Fade</span></div>
-        <div class="wall-frame frame-small"><span>Beard</span></div>
-        <div class="gold-line"></div>
+    <section class="section split-section" id="expertise">
+      <div class="split-media reveal">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=85" alt="Intérieur d’un barber shop premium" />
       </div>
-
-      <div class="experience-copy reveal">
-        <p class="eyebrow">Expérience client</p>
-        <h2>Un salon pensé pour donner confiance dès la première seconde.</h2>
-        <p>Le site met en avant les services, les avis, les horaires et le contact direct. Le client peut appeler ou réserver sur WhatsApp sans chercher.</p>
-
-        <div class="steps">
-          <div><span>01</span><strong>Diagnostic style</strong><p>On adapte la coupe au visage et au style du client.</p></div>
-          <div><span>02</span><strong>Finition premium</strong><p>Contours propres, barbe nette et coiffage soigné.</p></div>
-          <div><span>03</span><strong>Réservation simple</strong><p>Appel ou WhatsApp en un clic depuis le téléphone.</p></div>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Pourquoi nous choisir</p>
+        <h2>Un salon qui inspire confiance avant même le premier rendez-vous.</h2>
+        <p>Chaque détail compte : hygiène, accueil, précision, conseils et finitions. Le site met en valeur l’expérience pour transformer une visite en réservation.</p>
+        <div class="benefit-list">
+          <div><span>01</span><strong>Précision</strong><p>Contours, dégradés et finitions travaillés au détail.</p></div>
+          <div><span>02</span><strong>Hygiène</strong><p>Matériel propre, poste organisé, ambiance rassurante.</p></div>
+          <div><span>03</span><strong>Rapidité</strong><p>Réservation simple et contact direct en un clic.</p></div>
+          <div><span>04</span><strong>Expérience</strong><p>Un moment premium, pas juste une coupe.</p></div>
         </div>
       </div>
     </section>
 
     <section class="section gallery-section" id="galerie">
-      <div class="section-head reveal">
-        <p class="eyebrow">Galerie premium</p>
-        <h2>Pas d’images cassées : des visuels intégrés au design.</h2>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galerie</p>
+        <h2>Des visuels qui donnent envie de réserver.</h2>
       </div>
 
-      <div class="gallery">
-        <div class="gallery-card reveal"><span>Coupe Signature</span><small>Dégradé précis</small></div>
-        <div class="gallery-card reveal"><span>Barbe Sculptée</span><small>Contours au rasoir</small></div>
-        <div class="gallery-card reveal"><span>Salon Premium</span><small>Ambiance noire & dorée</small></div>
-        <div class="gallery-card reveal"><span>Soin Visage</span><small>Finition haut de gamme</small></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item tall reveal">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85" alt="Coupe homme réalisée en barber shop" />
+          <figcaption><strong>Coupe signature</strong><span>Dégradé précis</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" alt="Barber shop élégant" />
+          <figcaption><strong>Ambiance premium</strong><span>Noir & doré</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=85" alt="Client dans un salon barber" />
+          <figcaption><strong>Expérience client</strong><span>Confort & style</span></figcaption>
+        </figure>
+        <figure class="gallery-item wide reveal">
+          <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=1200&q=85" alt="Taille de barbe et finitions" />
+          <figcaption><strong>Barbe sculptée</strong><span>Finition au rasoir</span></figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="section reviews" id="avis">
-      <div class="section-head reveal">
-        <p class="eyebrow">Preuve sociale</p>
-        <h2>Des avis qui rassurent avant la réservation.</h2>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Avis clients</p>
+        <h2>La preuve sociale qui rassure avant l’appel.</h2>
       </div>
-
       <div class="reviews-grid">
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“Salon très propre, coupe parfaite, je reviendrai.”</p><strong>Karim B.</strong></article>
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“Barbe travaillée avec précision, service rapide.”</p><strong>Mehdi R.</strong></article>
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“Ambiance classe, équipe professionnelle, super rendu.”</p><strong>Nassim A.</strong></article>
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Salon très propre, coupe parfaite et finitions au top. On sent le niveau premium.”</p><strong>Karim B.</strong></article>
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Barbe travaillée avec précision. Réservation rapide et service professionnel.”</p><strong>Mehdi R.</strong></article>
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Ambiance classe, équipe sérieuse, résultat impeccable. Je recommande.”</p><strong>Nassim A.</strong></article>
       </div>
     </section>
 
-    <section class="cta reveal">
+    <section class="experience-band reveal">
       <div>
         <p class="eyebrow">Réservation express</p>
-        <h2>Un client peut réserver en moins d’une minute.</h2>
+        <h2>Un site pensé pour transformer les visiteurs en clients.</h2>
       </div>
-      <a class="btn dark" href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver maintenant</a>
+      <a class="btn btn-dark" href="https://wa.me/33123456789" target="_blank" rel="noopener">Réserver maintenant</a>
     </section>
 
-    <section class="section contact" id="contact">
+    <section class="section contact-section" id="contact">
       <div class="contact-card reveal">
         <p class="eyebrow">Infos pratiques</p>
         <h2>Maison Noir Barber</h2>
         <ul>
           <li><strong>Adresse</strong><span>25 Rue des Artisans, 75011 Paris</span></li>
-          <li><strong>Horaires</strong><span>Lun–Sam · 10:00–20:00</span></li>
+          <li><strong>Horaires</strong><span>Lundi — Samedi · 10:00 — 20:00</span></li>
           <li><strong>Téléphone</strong><span>01 23 45 67 89</span></li>
         </ul>
-        <div class="actions">
-          <a class="btn primary" href="tel:+33123456789">Appeler</a>
-          <a class="btn ghost" href="https://maps.google.com" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="tel:+33123456789">Appeler</a>
+          <a class="btn btn-glass" href="https://maps.google.com" target="_blank" rel="noopener">Itinéraire</a>
         </div>
       </div>
 
-      <form class="form reveal">
+      <form class="booking-form reveal">
         <label>Nom<input type="text" placeholder="Votre nom"></label>
         <label>Téléphone<input type="tel" placeholder="06 12 34 56 78"></label>
-        <label>Service<select><option>Coupe + Barbe Signature</option><option>Coupe Homme</option><option>Taille de Barbe</option><option>Soin Visage</option></select></label>
-        <button class="btn primary" type="submit">Demander un rendez-vous</button>
-        <p>Démo : le bouton peut être connecté à WhatsApp, email ou outil de réservation.</p>
+        <label>Service<select><option>Coupe + Barbe Signature</option><option>Coupe Homme</option><option>Taille de Barbe</option><option>Rasage Traditionnel</option><option>Soin Visage</option></select></label>
+        <button class="btn btn-gold" type="submit">Demander un rendez-vous</button>
+        <p>Le formulaire redirige vers WhatsApp pour une prise de contact rapide.</p>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© <span id="year"></span> Maison Noir Barber</span>
-    <span>Site vitrine premium pour commerces locaux</span>
+    <div><strong>Maison Noir Barber</strong><span>Barber shop premium · Paris</span></div>
+    <div class="footer-links"><a href="#services">Services</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a></div>
   </footer>
 
-  <script src="script.js?v=premium-3"></script>
+  <script src="script.js?v=premium1000"></script>
 </body>
 </html>
