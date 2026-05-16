@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Barber shop premium : coupes, barbe, soins et expérience haut de gamme." />
+  <title>L'Atelier Barber | Barber Shop Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <nav class="navbar container">
+      <a href="#accueil" class="logo">L'Atelier <span>Barber</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="hero-tag">Barber Shop Premium • Depuis 2014</p>
+      <h1>Style, précision et élégance masculine</h1>
+      <p>Offrez-vous une expérience haut de gamme : coupe, barbe et soins dans une ambiance noire et dorée pensée pour votre confort.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+33123456789">Appeler</a>
+        <a class="btn btn-secondary" href="https://wa.me/33123456789" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="services">
+      <div class="section-header">
+        <h2>Services & Tarifs</h2>
+        <p>Des prestations réalisées par des barbiers experts, avec produits premium.</p>
+      </div>
+      <div class="services-grid">
+        <article class="card service-card"><h3>Coupe Signature</h3><p>Dégradé, contours et coiffage sur mesure.</p><span>28 €</span></article>
+        <article class="card service-card"><h3>Taille de Barbe</h3><p>Sculpture, ligne nette et serviette chaude.</p><span>22 €</span></article>
+        <article class="card service-card"><h3>Coupe + Barbe</h3><p>Le rituel complet du gentleman moderne.</p><span>45 €</span></article>
+        <article class="card service-card"><h3>Rasage Traditionnel</h3><p>Rasage à l’ancienne et soin apaisant.</p><span>30 €</span></article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="galerie">
+      <div class="container">
+        <div class="section-header">
+          <h2>Galerie</h2>
+          <p>Quelques styles réalisés à l’atelier.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1512690459411-b0fd1c86b8ba?auto=format&fit=crop&w=900&q=80" alt="Coupe homme moderne" /></figure>
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Taille de barbe précise" /></figure>
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80" alt="Rasage traditionnel" /></figure>
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431403-3aa8e5f3c2b9?auto=format&fit=crop&w=900&q=80" alt="Ambiance barber shop premium" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="avis">
+      <div class="section-header">
+        <h2>Avis Clients</h2>
+      </div>
+      <div class="reviews-grid">
+        <article class="card review-card"><p>“Service impeccable, coupe parfaite à chaque passage.”</p><h4>— Karim B.</h4></article>
+        <article class="card review-card"><p>“Ambiance classe, équipe pro, je recommande à 100%.”</p><h4>— Thomas L.</h4></article>
+        <article class="card review-card"><p>“La meilleure taille de barbe de la ville. Rapide et précis.”</p><h4>— Mehdi R.</h4></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Infos Pratiques</h2>
+          <ul class="contact-list">
+            <li><strong>Horaires :</strong> Lun-Sam, 10h00 - 20h00</li>
+            <li><strong>Adresse :</strong> 25 Rue des Artisans, 75011 Paris</li>
+            <li><strong>Téléphone :</strong> <a href="tel:+33123456789">01 23 45 67 89</a></li>
+          </ul>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="tel:+33123456789">Appeler maintenant</a>
+          <a class="btn btn-secondary" href="https://wa.me/33123456789" target="_blank" rel="noopener">Contacter sur WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> L'Atelier Barber — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
