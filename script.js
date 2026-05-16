@@ -1,29 +1,36 @@
-const year = document.getElementById('year');
-if (year) year.textContent = new Date().getFullYear();
+const menuToggle = document.getElementById('menuToggle');
+const siteNav = document.getElementById('siteNav');
 
-const menuBtn = document.getElementById('menuBtn');
-const nav = document.getElementById('nav');
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener('click', () => {
+    siteNav.classList.toggle('open');
+  });
 
-if (menuBtn && nav) {
-  menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => nav.classList.remove('open'));
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+    });
   });
 }
 
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
   });
-}, { threshold: 0.14 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal').forEach((element) => {
+  revealObserver.observe(element);
+});
 
-const form = document.querySelector('.form');
-if (form) {
-  form.addEventListener('submit', (event) => {
+const bookingForm = document.querySelector('.booking-form');
+
+if (bookingForm) {
+  bookingForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const message = encodeURIComponent('Bonjour, je souhaite réserver un rendez-vous chez Maison Noir Barber.');
-    window.open(`https://wa.me/33123456789?text=${message}`, '_blank');
+    window.open('https://wa.me/33123456789?text=' + message, '_blank');
   });
 }
